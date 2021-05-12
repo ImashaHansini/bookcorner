@@ -112,7 +112,7 @@ class Converter extends React.Component {
             <div>
             <button type = "button" class = "btn btn-light btn-sm mr-1 mb-3" onClick={this.convertHandler}>Convert</button>
 
-            {this.state.result && <p class = "mb-3">{this.state.result}</p>} 
+            {this.state.result && <p class = "mb-3"> {this.state.result} </p>} 
             </div>
           </div>
         </div>

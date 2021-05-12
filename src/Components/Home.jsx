@@ -2,6 +2,7 @@ import React from "react";
 import '../App.css';
 
 function Home() {
+
   return (
     <div className="App">
         
@@ -10,18 +11,19 @@ function Home() {
                 <div className="col-lg-3">
                     <h1 className="my-4">Matilda's Ebook Corner</h1>
                     <div className="list-group">
-                        <a className="list-group-item" href="#!">Fiction</a>
-                        <a className="list-group-item" href="#!">Historical</a>
-                        <a className="list-group-item" href="#!">Romance</a>
-                        <a className="list-group-item" href="#!">Manga</a>
-                        <a className="list-group-item" href="#!">Adventure</a>
-                        <a className="list-group-item" href="#!">Classic</a>
-                        <a className="list-group-item" href="#!">Horror</a>
-                        <a className="list-group-item" href="#!">Scientific</a>
-                        <a className="list-group-item" href="#!">Mystry</a>
-                        <a className="list-group-item" href="#!">Translations</a>
+                        <a className="list-group-item" href="/Books">Fiction</a>
+                        <a className="list-group-item" href="/Books">Historical</a>
+                        <a className="list-group-item" href="/Books">Romance</a>
+                        <a className="list-group-item" href="/Books">Manga</a>
+                        <a className="list-group-item" href="/Books">Adventure</a>
+                        <a className="list-group-item" href="/Books">Classic</a>
+                        <a className="list-group-item" href="/Books">Horror</a>
+                        <a className="list-group-item" href="/Books">Scientific</a>
+                        <a className="list-group-item" href="/Books">Mystry</a>
+                        <a className="list-group-item" href="/Books">Translations</a>
                     </div>
                 </div>
+
                 <div className="col-lg-9">
                     <div className="carousel slide my-4" id="carouselExampleIndicators" data-ride="carousel">
                         <ol className="carousel-indicators">
@@ -86,7 +88,7 @@ function Home() {
                             <div className="card h-100">
                                 <a href="#!"><img className="card-img-top" src="Images/Book3.jpg" alt="..." /></a>
                                 <div className="card-body">
-                                    <h4 className="card-title"><a href="#!">Item Two</a></h4>
+                                    <h4 className="card-title"><a href="#!">Item Three</a></h4>
                                     <h5>$24.99</h5>
                                     <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
                                 </div>
@@ -105,7 +107,7 @@ function Home() {
                             <div className="card h-100">
                                 <a href="#!"><img className="card-img-top" src="Images/Book4.jpg" alt="..." /></a>
                                 <div className="card-body">
-                                    <h4 className="card-title"><a href="#!">Item Two</a></h4>
+                                    <h4 className="card-title"><a href="#!">Item Four</a></h4>
                                     <h5>$24.99</h5>
                                     <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
                                 </div>
@@ -124,7 +126,7 @@ function Home() {
                             <div className="card h-100">
                                 <a href="#!"><img className="card-img-top" src="Images/Book5.png" alt="..." /></a>
                                 <div className="card-body">
-                                    <h4 className="card-title"><a href="#!">Item Two</a></h4>
+                                    <h4 className="card-title"><a href="#!">Item Five</a></h4>
                                     <h5>$24.99</h5>
                                     <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
                                 </div>
@@ -143,7 +145,7 @@ function Home() {
                             <div className="card h-100">
                                 <a href="#!"><img className="card-img-top" src="Images/Book6.jpg" alt="..." /></a>
                                 <div className="card-body">
-                                    <h4 className="card-title"><a href="#!">Item Two</a></h4>
+                                    <h4 className="card-title"><a href="#!">Item Six</a></h4>
                                     <h5>$24.99</h5>
                                     <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
                                 </div>

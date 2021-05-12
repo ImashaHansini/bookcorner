@@ -1,7 +1,11 @@
 import React from "react";
 import Converter from "./converter/converter"
+import { useHistory } from "react-router-dom";
 
 function Cart() {
+
+  const history = useHistory();
+  
   return (
     <div className="cart">
       <div class="d-flex align-items-center h-100">
@@ -136,7 +140,7 @@ function Cart() {
                   </li>
                 </ul>
 
-                <button type="button" class="btn btn-primary btn-block waves-effect waves-light">go to
+                <button type="button" class="btn btn-primary btn-block waves-effect waves-light" onClick = {() => history.push("/Payment")}> go to
                   checkout</button>
 
               </div>
