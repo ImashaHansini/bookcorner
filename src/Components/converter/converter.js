@@ -14,7 +14,7 @@ class Converter extends React.Component {
     }
     componentDidMount() {
       axios
-        .get("https://v6.exchangerate-api.com/v6/9fa0b1ed62cae823aadaff37/latest/USD")
+        .get("https://v6.exchangerate-api.com/v6/9fa0b1ed62cae823aadaff37/codes")
         .then(response => {
           const currencyAr = ["USD","LKR",
           "AED","UAE","AFN","ALL","AMD","ANG","AOA","ARS","AUD","AWG","AZN",	
@@ -63,7 +63,7 @@ class Converter extends React.Component {
           .then(response => {
             const result =
               this.state.amount * response.data.rates[this.state.toCurrency];
-            this.setState({ result: result.toFixed(5) });
+            this.setState({ result: result.toFixed(5)});
           })
           .catch(error => {
             console.log("Oops", error.message);
@@ -112,7 +112,7 @@ class Converter extends React.Component {
             <div>
             <button type = "button" class = "btn btn-light btn-sm mr-1 mb-3" onClick={this.convertHandler}>Convert</button>
 
-            {this.state.result && <p class = "mb-3"> {this.state.result} </p>} 
+            {this.state.result && <h6 class = "mb-3"> {this.state.result} </h6>} 
             </div>
           </div>
         </div>

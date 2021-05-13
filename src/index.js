@@ -12,9 +12,9 @@ export { default as Signup } from "./Components/Signup";
 export { default as Library } from "./Components/Library";
 export { default as Wishlist } from "./Components/Wishlist";
 export { default as Cart } from "./Components/Cart";
-export { default as Payment } from "./Components/Payment Details/Payment"
+export { default as Payment } from "./Components/Payment Details/Payment";
 export { default as Signin } from "./Components/Signin";
-export { default as Books } from "./Components/NYT Books/Books"
+export { default as Books } from "./Components/NYT Books/Books";
 
 ReactDOM.render(
   <React.StrictMode>
