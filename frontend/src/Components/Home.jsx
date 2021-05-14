@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../App.css";
-import { addToCart, addToWishlist } from "../actions/cartAction";
 import books from "../books";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -31,7 +30,7 @@ function Home() {
           <div className="col-lg-3">
             <h1 className="my-4">Matilda's Ebook Corner</h1>
             <div className="list-group">
-              <a className="list-group-item" href="/Books">
+              <a className="list-group-item" href="/NYTBooks">
                 Best Selling
               </a>
               <a className="list-group-item" href="#!">
@@ -99,7 +98,7 @@ function Home() {
                 <div className="carousel-item">
                   <img
                     className="d-block img-fluid"
-                    src="Images/The-Best-Selling-Books-of-All-Time.jpg"
+                    src="Images/harry-potter-series.jpg"
                     alt="Second slide"
                   />
                 </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import {removeFromWishlist, addToCart} from "../actions/cartAction"
 
 function Wishlist() {
   return (

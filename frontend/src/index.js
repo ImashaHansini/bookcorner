@@ -14,7 +14,7 @@ export { default as Wishlist } from "./Components/Wishlist";
 export { default as Cart } from "./Components/Cart";
 export { default as Payment } from "./Components/Payment Details/Payment";
 export { default as Signin } from "./Components/Signin";
-export { default as Books } from "./Components/NYT Books/Books";
+export { default as NYTBooks } from "./Components/NYT Books/NYTBooks";
 
 ReactDOM.render(
   <React.StrictMode>

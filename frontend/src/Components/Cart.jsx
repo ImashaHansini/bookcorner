@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Converter from "./converter/converter";
 import { useHistory } from "react-router-dom";
-import { removeFromCart, addToWishlist } from "../actions/cartAction";
 import CartItem from "./CartItem";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -68,8 +67,8 @@ function Cart() {
   // const fetchedCartItems = JSON.parse(localStorage.getItem("cartItems"));
 
   const calculateAmounts = () => {
-    setOrderTotal(cartItems.reduce((acc, item) => acc + item.price, 0));
-    setFinalTotal(orderTotal * 1.05);
+    setOrderTotal((cartItems.reduce((acc, item) => acc + item.price, 0)).toFixed(2));
+    setFinalTotal((orderTotal * 1.05).toFixed(2));
   };
 
   const placeOrder = async () => {
@@ -86,10 +85,10 @@ function Cart() {
 
     const orderdata = {
       fullName: "Imasha Hansini",
-      cardNo: "64565545634568476541",
+      cardNo: "6456554563456847",
       expDate: "2021/05/15",
       orderItems: cartItems,
-    };
+    }; 
 
     const { data } = await axios.post(
       "http://localhost:3000/payment",

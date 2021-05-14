@@ -36,13 +36,13 @@ const CartItem = ({ book, callback }) => {
                 type="button"
                 className="card-link-secondary small text-uppercase mr-3"
               >
-                <i className="fas fa-trash-alt mr-1"></i> Remove item{" "}
+                 Remove item{" "}
               </a>
               <a
                 type="button"
                 className="card-link-secondary small text-uppercase"
               >
-                <i className="fas fa-heart mr-1"></i> Move to wish list{" "}
+                 Move to wish list{" "}
               </a>
             </div>
             <p className="mb-0">
