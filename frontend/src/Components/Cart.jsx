@@ -1,6 +1,7 @@
 import React from "react";
 import Converter from "./converter/converter"
 import { useHistory } from "react-router-dom";
+import {removeFromCart, addToWishlist} from "../actions/cartAction"
 
 function Cart() {
 

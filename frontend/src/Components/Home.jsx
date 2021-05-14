@@ -1,5 +1,6 @@
 import React from "react";
 import '../App.css';
+import {addToCart, addToWishlist} from "../actions/cartAction"
 
 function Home() {
 
@@ -33,9 +34,12 @@ function Home() {
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
                         <div className="carousel-inner" role="listbox">
-                            <div className="carousel-item active"><img className="d-block img-fluid" src="Images/Ebook Corner banner.png" alt="First slide" /></div>
-                            <div className="carousel-item"><img className="d-block img-fluid" src="Images/The-Best-Selling-Books-of-All-Time.jpg" alt="Second slide" /></div>
-                            <div className="carousel-item"><img className="d-block img-fluid" src="Images/Ebook reader.JPG" alt="Third slide" /></div>
+                            <div className="carousel-item active"><img className="d-block img-fluid" src="Images/Ebook Corner banner.png" 
+                            alt="First slide" /></div>
+                            <div className="carousel-item"><img className="d-block img-fluid" src="Images/The-Best-Selling-Books-of-All-Time.jpg" 
+                            alt="Second slide" /></div>
+                            <div className="carousel-item"><img className="d-block img-fluid" src="Images/Ebook reader.JPG" 
+                            alt="Third slide" /></div>
                         </div>
                         <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -51,9 +55,9 @@ function Home() {
                             <div className="card h-100">
                                 <a href="#!"><img className="card-img-top" src="Images/Book1.jpg" alt="..." /></a>
                                 <div className="card-body">
-                                    <h4 className="card-title"><a href="#!">Item One</a></h4>
+                                    <h4 className="card-title"><a href="#!">Harry Potter</a></h4>
                                     <h5>$24.99</h5>
-                                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                                    <p className="card-text">Book Description</p>
                                 </div>
                                 <div className="card-footer">
                                     <a href="#!" type="button" class="card-link-secondary small text-uppercase">
@@ -70,9 +74,9 @@ function Home() {
                             <div className="card h-100">
                                 <a href="#!"><img className="card-img-top" src="Images/Book2.jpg" alt="..." /></a>
                                 <div className="card-body">
-                                    <h4 className="card-title"><a href="#!">Item Two</a></h4>
+                                    <h4 className="card-title"><a href="#!">Matilda</a></h4>
                                     <h5>$24.99</h5>
-                                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                                    <p className="card-text">Book Description</p>
                                 </div>
                                 <div className="card-footer">
                                     <a href="#!" type="button" class="card-link-secondary small text-uppercase">
@@ -89,9 +93,9 @@ function Home() {
                             <div className="card h-100">
                                 <a href="#!"><img className="card-img-top" src="Images/Book3.jpg" alt="..." /></a>
                                 <div className="card-body">
-                                    <h4 className="card-title"><a href="#!">Item Three</a></h4>
+                                    <h4 className="card-title"><a href="#!">Duke and I</a></h4>
                                     <h5>$24.99</h5>
-                                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                                    <p className="card-text">Book Description</p>
                                 </div>
                                 <div className="card-footer">
                                     <a href="#!" type="button" class="card-link-secondary small text-uppercase">
@@ -108,9 +112,9 @@ function Home() {
                             <div className="card h-100">
                                 <a href="#!"><img className="card-img-top" src="Images/Book4.jpg" alt="..." /></a>
                                 <div className="card-body">
-                                    <h4 className="card-title"><a href="#!">Item Four</a></h4>
+                                    <h4 className="card-title"><a href="#!">Chibi Manga</a></h4>
                                     <h5>$24.99</h5>
-                                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                                    <p className="card-text">Book Description</p>
                                 </div>
                                 <div className="card-footer">
                                     <a href="#!" type="button" class="card-link-secondary small text-uppercase">
@@ -127,9 +131,9 @@ function Home() {
                             <div className="card h-100">
                                 <a href="#!"><img className="card-img-top" src="Images/Book5.png" alt="..." /></a>
                                 <div className="card-body">
-                                    <h4 className="card-title"><a href="#!">Item Five</a></h4>
+                                    <h4 className="card-title"><a href="#!">After Life</a></h4>
                                     <h5>$24.99</h5>
-                                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                                    <p className="card-text">Book Description</p>
                                 </div>
                                 <div className="card-footer">
                                     <a href="#!" type="button" class="card-link-secondary small text-uppercase">
@@ -146,9 +150,9 @@ function Home() {
                             <div className="card h-100">
                                 <a href="#!"><img className="card-img-top" src="Images/Book6.jpg" alt="..." /></a>
                                 <div className="card-body">
-                                    <h4 className="card-title"><a href="#!">Item Six</a></h4>
+                                    <h4 className="card-title"><a href="#!">The Secret Garden</a></h4>
                                     <h5>$24.99</h5>
-                                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                                    <p className="card-text">Book Description</p>
                                 </div>
                                 <div className="card-footer">
                                     <a href="#!" type="button" class="card-link-secondary small text-uppercase">

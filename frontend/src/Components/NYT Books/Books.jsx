@@ -44,7 +44,8 @@ class Books extends Component {
       error: null
     });
     let apiKey = "vCRgzsPrcfO673AjQgRhFZu3InDIwKsa";
-    await axios.get(`https://api.nytimes.com/svc/books/v3/lists.json?list=${select}&api-key=${apiKey}`, {Accept: 'application/json'})
+    await axios.get(`https://api.nytimes.com/svc/books/v3/lists.json?list=${select}&api-key=${apiKey}`, 
+    {Accept: 'application/json'})
       .then(response => response.data)
       .then(data => data.results)
       .then(results => {
@@ -67,7 +68,9 @@ class Books extends Component {
         if (book.isbns[0] && book.isbns[0].isbn10 && book.isbns[0].isbn10 !== 'None') {
           isbn = book.isbns[0].isbn10;
         }
-        const fetchInfo = await axios.get(`https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json?api-key=${NYTApiKey}&isbn=${isbn}`, config)
+        const fetchInfo = await axios.get
+        (`https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json?api-key=
+        ${NYTApiKey}&isbn=${isbn}`, config)
         convert.xmlDataToJSON(fetchInfo.data)
           .then(async (data) => {
             if (!data.NYTResponse.search[0].results[0].work) {
@@ -104,7 +107,8 @@ class Books extends Component {
 
   renderBooks() {
     const { selected } = this.state;
-    let isWeekly = !((selected === "audio-fiction") || (selected === "audio-nonfiction") || (selected === "business-books") || (selected === "science") || (selected === "sports") );
+    let isWeekly = !((selected === "audio-fiction") || (selected === "audio-nonfiction") ||
+     (selected === "business-books") || (selected === "science") || (selected === "sports") );
     return (
       this.state.list.sort((a,b) => a.rank - b.rank)
       .map((item, index) => {
@@ -121,7 +125,9 @@ class Books extends Component {
         <Header select={this.handleChoice}/>
         {this.state.error ? this.state.error :
         this.state.list.length ?
-        this.state.list.length === 10 ? <div className="list ten">{this.renderBooks()}</div> : <div className="list fifteen">{this.renderBooks()}</div>  : this.state.loading ? <h2>Loading...</h2> : <h6>Select a genre from the list</h6>}
+        this.state.list.length === 10 ? <div className="list ten">{this.renderBooks()}</div> : 
+        <div className="list fifteen">{this.renderBooks()}</div>  : this.state.loading ? <h2>Loading...</h2> :
+         <h6>Select a genre from the list</h6>}
       </div>
     );
   }
